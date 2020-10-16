@@ -9,7 +9,7 @@ const koroneEmbed = new Discord.MessageEmbed()
   .setDescription("")
   .addField("Twitter:", "https://twitter.com/inugamikorone", true)
   .addField("Livestream: ", Korone_Url, false)
-  .setTimestamp(Date.now());
+  .setTimestamp(message.createdAt);
 
 module.exports = {
   name: "korone",
