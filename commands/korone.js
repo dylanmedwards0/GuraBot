@@ -1,4 +1,5 @@
 const Discord = require("discord.js");
+const client = new Discord.Client();
 Korone_Url = "https://www.youtube.com/channel/UChAnqc_AY5_I3Px5dig3X1Q/live";
 Korone_Image = "https://i.imgur.com/OLGyVeN.jpg";
 const koroneEmbed = new Discord.MessageEmbed()
@@ -9,7 +10,6 @@ const koroneEmbed = new Discord.MessageEmbed()
   .setDescription("")
   .addField("Twitter:", "https://twitter.com/inugamikorone", true)
   .addField("Livestream: ", Korone_Url, false)
-  .setTimestamp(message.createdTimestamp);
 
 module.exports = {
   name: "korone",

@@ -9,7 +9,6 @@ const ameliaEmbed = new Discord.MessageEmbed()
   .setDescription("")
   .addField("Twitter:", "https://twitter.com/watsonameliaEN", true)
   .addField("Livestream: ", Amelia_Url, false)
-  .setTimestamp();
 
 module.exports = {
   name: "ame",

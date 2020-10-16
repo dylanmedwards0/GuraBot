@@ -9,7 +9,7 @@ const guraEmbed = new Discord.MessageEmbed()
   .setDescription("")
   .addField("Twitter:", "https://twitter.com/gawrgura", true)
   .addField("Livestream: ", Gura_Url, false)
-  .setTimestamp();
+
 
 module.exports = {
   name: "gura",
