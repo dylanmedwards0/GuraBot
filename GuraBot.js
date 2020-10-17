@@ -26,14 +26,14 @@ client.on("message", (message) => {
 
   if(commandName ===`change`){
      if (args[0] == 'gura'){
-      client.user.setAvatar(`./gura_icon.jpg`);
+      client.user.setAvatar(avatar=`./gura_icon.jpg`);
       client.user.setUsername("GuraBot");
     } else if (args[0] == "korone"){
-      client.user.setAvatar(`https://i.imgur.com/OLGyVeN.jpg`);
+      client.user.setAvatar(avatar= `https://i.imgur.com/OLGyVeN.jpg`);
       client.user.setUsername("KoroneBot");
     }
       else if (args[0] == "ame"){
-        client.user.setAvatar(`ame_icon.jpg`);
+        client.user.setAvatar(avatar=`ame_icon.jpg`);
         client.user.setUsername("AmeBot");
   }
 }
