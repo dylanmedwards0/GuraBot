@@ -6,7 +6,8 @@
   "dependencies": {
     "discord.js": "^12.3.1",
     "googleapis": "^61.0.0",
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^2.6.1",
+    "youtube-dl": "^3.0.2"
   },
   "devDependencies": {},
   "scripts": {
