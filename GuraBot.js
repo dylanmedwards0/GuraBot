@@ -28,12 +28,11 @@ client.on("message", (message) => {
      if (args[0] == 'gura'){
       client.user.setAvatar(`./gura_icon.jpg`);
       client.user.setUsername("GuraBot");
-      message.reply("gura");
-    } else if (args === "korone" || args === "Korone"){
+    } else if (args[0] == "korone"){
       client.user.setAvatar(`https://i.imgur.com/OLGyVeN.jpg`);
       client.user.setUsername("KoroneBot");
     }
-      else if (args === "ame" || args === "Ame"){
+      else if (args[0] == "ame"){
         client.user.setAvatar(`ame_icon.jpg`);
         client.user.setUsername("AmeBot");
   }
