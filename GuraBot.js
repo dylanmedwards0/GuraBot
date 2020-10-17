@@ -8,7 +8,7 @@ const cooldowns = new Discord.Collection();
 const commandFiles = fs
   .readdirSync("./commands")
   .filter((file) => file.endsWith(".js"));
-
+export { client };
 for (const file of commandFiles) {
   const command = require(`./commands/${file}`);
   client.commands.set(command.name, command);
@@ -67,6 +67,9 @@ client.on("message", (message) => {
     console.error(error);
     message.reply("Gura had a little fucky wucky executing that command!");
   }
+
+
+
 });
 
 client.login(process.env.TOKEN);
