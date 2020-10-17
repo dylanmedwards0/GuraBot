@@ -28,7 +28,8 @@ client.on("message", (message) => {
     if(!args.length){
       message.reply(`You didn't provide any arguments, ${message.author}! Use !change gura, ame, or korone.`);
       return;
-    } else if (args === "gura" || args === "Gura"){
+    }
+     if (args === "gura" || args === "Gura"){
       client.user.setAvatar(`gura_icon.jpg`);
       client.user.setUsername("GuraBot");
     } else if (args === "korone" || args === "Korone"){
