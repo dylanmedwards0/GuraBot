@@ -25,11 +25,6 @@ client.on("message", (message) => {
   const commandName = args.shift().toLowerCase();
 
   if(commandName ===`change`){
-    message.reply(args);
-    if(!args.length){
-      message.reply(`You didn't provide any arguments, ${message.author}! Use !change gura, ame, or korone.`);
-      return;
-    }
      if (args === "gura" || args === "Gura"){
       client.user.setAvatar(`./gura_icon.jpg`);
       client.user.setUsername("GuraBot");
