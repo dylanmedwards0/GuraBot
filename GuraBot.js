@@ -6,9 +6,6 @@ const { prefix } = require("./config.json");
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
 const cooldowns = new Discord.Collection();
-const obj = client.guilds.cache.get('<id>');
-const guildg = new Discord.Guild(client, obj);
-const clientg = new Discord.GuildMember(client, obj, guildg);
 const commandFiles = fs
   .readdirSync("./commands")
   .filter((file) => file.endsWith(".js"));
@@ -30,14 +27,14 @@ client.on("message", (message) => {
   if(commandName ===`change`){
      if (args[0] == 'gura'){
       client.user.setAvatar(avatar=`./gura_icon.jpg`);
-      clientg.setNickname(nickname="GuraBot");
+      client.user.setUsername(username="GuraBot");
     } else if (args[0] == "korone"){
       client.user.setAvatar(avatar= `./korone_icon.jpg`);
-      clientg.setNickname(nickname="KoroneBot");
+      client.user.setUsername(username="KoroneBot");
     }
       else if (args[0] == "ame"){
         client.user.setAvatar(avatar=`./ame_icon.jpg`);
-        clientg.setNickname(nickname="AmeBot");
+        client.user.setUsername(username="AmeBot");
   }
 }
 
