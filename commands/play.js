@@ -7,7 +7,12 @@ description:"Plays music",
 
 
 async execute(message, args){
-    message.member.voice.channel.join();
+    
+    Discord.VoiceChannel.join()
+    .then(connection => message.send("Gura is here!"))
+    .catch(console.error);
+
+    
 
 
 
