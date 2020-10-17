@@ -11,7 +11,7 @@ description:"Plays music",
  async execute(message, args){
   if(message.member.voice.channel){
    const connection = await message.member.voice.channel.join();
-    const dispatcher = await connection.play(`${args}`, { quality: 'highestaudio' });
+    const dispatcher = await Discord.VoiceConnection.play(`${args}`, { quality: 'highestaudio' });
     dispatcher.on('start', () => {
          message.channel.send(`${args} is now playing`);
     });
