@@ -25,7 +25,7 @@ client.on("message", (message) => {
   const commandName = args.shift().toLowerCase();
 
   if(commandName ===`change`){
-     if (args.equalsTo('gura')){
+     if (args[0] == 'gura'){
       client.user.setAvatar(`./gura_icon.jpg`);
       client.user.setUsername("GuraBot");
       message.reply("gura");
