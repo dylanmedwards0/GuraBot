@@ -2,8 +2,8 @@ const Discord = require("discord.js");
 
 module.exports = {
 name:"play",
-args = true,
-usage = "<Youtube link>",
+args: true,
+usage: "<Youtube link>",
 description:"Plays music",
 
 
