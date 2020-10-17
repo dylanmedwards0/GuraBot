@@ -29,14 +29,14 @@ client.on("message", (message) => {
       message.reply(`You didn't provide any arguments, ${message.author}! Use !change gura, ame, or korone.`);
       return;
     } else if (args === "gura" || args === "Gura"){
-      client.user.setAvatar(`./gura_icon.jpg`);
+      client.user.setAvatar(`gura_icon.jpg`);
       client.user.setUsername("GuraBot");
     } else if (args === "korone" || args === "Korone"){
-      client.user.setAvatar(`./korone_icon.jpg`);
+      client.user.setAvatar(`korone_icon.jpg`);
       client.user.setUsername("KoroneBot");
     }
       else if (args === "ame" || args === "Ame"){
-        client.user.setAvatar(`./ame_icon.jpg`);
+        client.user.setAvatar(`ame_icon.jpg`);
         client.user.setUsername("AmeBot");
   }
 }
