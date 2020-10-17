@@ -1,5 +1,4 @@
 const Discord = require("discord.js");
-const client = new Discord.ClientUser(Discord.Client());
 const role = new Discord.Role;
 
 module.exports ={
@@ -10,11 +9,11 @@ module.exports ={
     execute(message, args){
         if(args.shift().toLowerCase() === 'gura'){
             role.edit({name: 'GuraBot', color: "#B0E0E6"});
-           client.setUsername("GuraBot");
-           client.setAvatar('./gura_icon.jpg');
+           bot.setUsername("GuraBot");
+           bot.setAvatar('./gura_icon.jpg');
         } else if(args.shift().toLowerCase() === 'ame'){
             role.edit({name: 'AmeBot', color: "FFE4B5"});
-            client.setUsername("AmeBot");
+            Discord.ClientUser.setUsername("AmeBot");
             client.setAvatar('./ame_icon.jpg');
         } else if(args.shift().toLowerCase() === 'korone'){
             role.edit({name: 'KoroneBot', color:"#DEB88"});
