@@ -12,7 +12,15 @@ description:"Plays music",
   if(message.member.voice.channel){
    const connection = await message.member.voice.channel.join();
     connection();
-    connection.play(ytdl(`${args}`, {quality: 'highestaudio'}));
+    const dispatcher = connection.play(ytdl(`${args}`, { quality: 'highestaudio' }));
+    dispatcher.on('start', () => {
+        message.channel.send(`${args} is now playing`);
+    });
+    dispatcher.on('finish', () =>{
+        message.channel.send(`${args} has finished playing`);
+        dispatcher.destroy();
+    });
+    dispatcher.on(`error`, console.error);
+    }
+    }
   }
-},
-}
