@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const client = Discord.ClientUser;
-const role = Discord.Role();
+const role = new Discord.Role;
 
 module.exports ={
     name: "change",
