@@ -5,6 +5,7 @@
   "main": "GuraBot.js",
   "dependencies": {
     "discord.js": "^12.3.1",
+    "ffmpeg": "0.0.4",
     "googleapis": "^61.0.0",
     "node-fetch": "^2.6.1"
   },
