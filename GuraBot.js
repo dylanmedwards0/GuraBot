@@ -6,6 +6,7 @@ const { prefix } = require("./config.json");
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
 const cooldowns = new Discord.Collection();
+const clientg = new Discord.GuildMember(client);
 const commandFiles = fs
   .readdirSync("./commands")
   .filter((file) => file.endsWith(".js"));
@@ -27,14 +28,14 @@ client.on("message", (message) => {
   if(commandName ===`change`){
      if (args[0] == 'gura'){
       client.user.setAvatar(avatar=`./gura_icon.jpg`);
-      client.user.setUsername(username="GuraBot");
+      clientg.setNickname(nickname="GuraBot");
     } else if (args[0] == "korone"){
       client.user.setAvatar(avatar= `./korone_icon.jpg`);
-      client.user.setUsername(username="KoroneBot");
+      clientg.setNickname(nickname="KoroneBot");
     }
       else if (args[0] == "ame"){
         client.user.setAvatar(avatar=`./ame_icon.jpg`);
-        client.user.setUsername(username="AmeBot");
+        clientg.setNickname(nickname="AmeBot");
   }
 }
 
