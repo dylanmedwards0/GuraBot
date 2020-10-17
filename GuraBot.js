@@ -63,11 +63,7 @@ client.on("message", (message) => {
     if (now < expirationTime) {
       const timeLeft = (expirationTime - now) / 1000;
       return message.reply(
-        `Slow down! Gura has ${timeLeft.toFixed(
-          1
-        )} more second(s) left before she can do the \`${
-          command.name
-        }\` command again.`
+        `Slow down! Gura has ${timeLeft.toFixed(1)} more second(s) left before she can do the \`${ command.name}\` command again.`
       );
     }
   }
