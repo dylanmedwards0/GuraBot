@@ -14,13 +14,13 @@ description:"Plays music",
     connection();
     const dispatcher = await connection.play(ytdl(`${args}`, { quality: 'highestaudio' }));
     dispatcher.on('start', () => {
-        await message.channel.send(`${args} is now playing`);
+         message.channel.send(`${args} is now playing`);
     });
     dispatcher.on('finish', () =>{
-       await message.channel.send(`${args} has finished playing`);
-       await  dispatcher.destroy();
+        message.channel.send(`${args} has finished playing`);
+         dispatcher.destroy();
     });
-    await dispatcher.on(`error`, console.error);
+     dispatcher.on(`error`, console.error);
     }
     }
   }
