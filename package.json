@@ -4,7 +4,9 @@
   "description": "GuraBot for Discord",
   "main": "GuraBot.js",
   "dependencies": {
-    "discord.js": "^12.3.1"
+    "discord.js": "^12.3.1",
+    "googleapis": "^61.0.0",
+    "node-fetch": "^2.6.1"
   },
   "devDependencies": {},
   "scripts": {
