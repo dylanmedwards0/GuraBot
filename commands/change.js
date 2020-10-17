@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-const client = new Discord.ClientUser();
+const client = new Discord.ClientUser(Discord.Client());
 const role = new Discord.Role;
 
 module.exports ={
