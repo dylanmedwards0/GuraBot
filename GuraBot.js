@@ -24,6 +24,23 @@ client.on("message", (message) => {
   const args = message.content.slice(prefix.length).trim().split(/ +/);
   const commandName = args.shift().toLowerCase();
 
+  if(commandName ===`change`){
+    if(!args.length){
+      message.reply(`You didn't provide any arguments, ${message.author}! Use !change gura, ame, or korone.`);
+      return;
+    } else if (args === "gura" || args === "Gura"){
+      client.user.setAvatar(`./gura_icon.jpg`);
+      client.user.setUsername("GuraBot");
+    } else if (args === "korone" || args === "Korone"){
+      client.user.setAvatar(`./korone_icon.jpg`);
+      client.user.setUsername("KoroneBot");
+    }
+      else if (args === "ame" || args === "Ame"){
+        client.user.setAvatar(`./ame_icon.jpg`);
+        client.user.setUsername("AmeBot");
+  }
+}
+
   if (!client.commands.has(commandName)) return;
 
   const command = client.commands.get(commandName);
@@ -67,6 +84,7 @@ client.on("message", (message) => {
     console.error(error);
     message.reply("Gura had a little fucky wucky executing that command!");
   }
+
 
 
 

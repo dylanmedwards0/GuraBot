@@ -1,5 +1,4 @@
 const Discord = require("discord.js");
-const client = new Discord.Client();
 Korone_Url = "https://www.youtube.com/channel/UChAnqc_AY5_I3Px5dig3X1Q/live";
 Korone_Image = "https://i.imgur.com/OLGyVeN.jpg";
 const koroneEmbed = new Discord.MessageEmbed()
