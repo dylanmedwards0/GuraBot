@@ -29,7 +29,7 @@ client.on("message", (message) => {
       client.user.setAvatar(`./gura_icon.jpg`);
       client.user.setUsername("GuraBot");
     } else if (args === "korone" || args === "Korone"){
-      client.user.setAvatar(`./korone_icon.jpg`);
+      client.user.setAvatar(`https://i.imgur.com/OLGyVeN.jpg`);
       client.user.setUsername("KoroneBot");
     }
       else if (args === "ame" || args === "Ame"){
