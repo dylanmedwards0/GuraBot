@@ -7,15 +7,15 @@ description:"Plays music",
 
 
 async execute(message, args){
-    const voiceChannel = new Discord.VoiceChannel;
-    voiceChannel.join()
-    .then(connection => message.send("Gura is here!"))
-    .catch(console.error);
+    const channel = client.channels.get(message.member.voice.channel);
+    if(!channel) return message.channel.send("You're not listening!");
+    channel.join()
+    .then(connection => {
+        message.channel.send("Gura is here!");
+    }).catch(e => {
 
-    
+        console.error(e);
+    });
 
-
-
-
+},
 }
-};
