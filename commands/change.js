@@ -10,16 +10,16 @@ module.exports = {
 
     execute(message, args){
     const client = message.client;
-    let theRole = message.guild.member(client.user).roles.cache.find(theRole => theRole.name === "bot");
+    let role = message.guild.member(client.user).roles.cache.find(role => role.name === "bot");
     if (args[0] == 'gura'){
-     theRole.edit({
+     role.edit({
          color: "#B0E0E6"
      })
      client.user.setAvatar(avatar=`./gura_icon.jpg`);
      message.guild.member(client.user).setNickname(username="GuraBot");
      
    } else if (args[0] == "korone"){
-    theRole.edit({
+    role.edit({
         color: "#DEB887"
     })
      client.user.setAvatar(avatar= `./korone_icon.jpg`);
@@ -27,7 +27,7 @@ module.exports = {
      
    }
      else if (args[0] == "ame"){
-        theRole.edit({
+        role.edit({
             color: "#FFE4B5"
         })
        client.user.setAvatar(avatar=`./ame_icon.jpg`);
