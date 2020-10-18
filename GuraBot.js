@@ -31,13 +31,13 @@ client.on("message", (message) => {
       client.user.setUsername(username="GuraBot");
     } else if (args[0] == "korone"){
       client.user.setAvatar(avatar= `./korone_icon.jpg`);
-      client.user.setUsername(username="KoroneBot");
+      message.guild.member(client.user).setNickname(username="KoroneBot");
       
     }
       else if (args[0] == "ame"){
         client.user.setAvatar(avatar=`./ame_icon.jpg`);
         //client.user.setUsername(username= 'AmeBot');
-        client.user.lastMessage.member.setNickname(nickname= 'AmeBot')
+        message.guild.member(client.user).setNickname(nickname= 'AmeBot')
   }
 }
 
