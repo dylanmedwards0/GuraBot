@@ -10,7 +10,7 @@ module.exports = {
 
     execute(message, args){
     const client = message.client;
-    let myRole = message.guild.roles.cache.get("766156135647674389").catch(console.error);
+    let myRole = message.guild.roles.cache.get("766156135647674389");
     if (args[0] == 'gura'){
      myRole.edit({
         color: "#B0E0E6"
