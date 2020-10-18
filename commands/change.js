@@ -10,11 +10,12 @@ module.exports = {
 
     execute(message, args){
     const client = message.client;
-    const role = message.guild.roles.cache.find(role => role.name === "bot");
+    var role = message.guild.roles.find(roleVal => roleVal.name === "Bot");
     if (args[0] == 'gura'){
-     role.edit({
-         color: "#B0E0E6"
-     })
+        role.edit({
+            color: "#B0E0E6"
+        })
+
      client.user.setAvatar(avatar=`./gura_icon.jpg`);
      message.guild.member(client.user).setNickname(username="GuraBot");
      
