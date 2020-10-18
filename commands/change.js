@@ -20,13 +20,19 @@ module.exports = {
      message.guild.member(client.user).setNickname(username="GuraBot");
      
    } else if (args[0] == "korone"){
-      client.role.setColor("#DEB887");
+    myRole.edit({
+        color: "#DEB887"
+     })
+     
      client.user.setAvatar(avatar= `./korone_icon.jpg`);
      message.guild.member(client.user).setNickname(username="KoroneBot");
      
    }
      else if (args[0] == "ame"){
-       role.setColor("#FFE4B5");
+        myRole.edit({
+            color: "#FFE4B5"
+         })
+         
        client.user.setAvatar(avatar=`./ame_icon.jpg`);
        message.guild.member(client.user).setNickname(nickname= 'AmeBot');
  }
