@@ -16,7 +16,7 @@ module.exports = {
      message.guild.member(client.user).setNickname(username="GuraBot");
      
    } else if (args[0] == "korone"){
-    client.guilds.roles.find("AmeBot", "Bot").setColor("#DEB887");
+    client.guilds.fetch("274001418627579907").roles.find("name", "Bot").setColor("#DEB887");
      client.user.setAvatar(avatar= `./korone_icon.jpg`);
      message.guild.member(client.user).setNickname(username="KoroneBot");
      
