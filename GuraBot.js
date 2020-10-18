@@ -1,6 +1,7 @@
 const fs = require("fs");
 const Discord = require("discord.js");
 const { prefix } = require("./config.json");
+const { basename } = require("path");
 
 
 const client = new Discord.Client();
@@ -31,10 +32,12 @@ client.on("message", (message) => {
     } else if (args[0] == "korone"){
       client.user.setAvatar(avatar= `./korone_icon.jpg`);
       client.user.setUsername(username="KoroneBot");
+      
     }
       else if (args[0] == "ame"){
         client.user.setAvatar(avatar=`./ame_icon.jpg`);
-        client.user.setUsername(username="AmeBot");
+        //client.user.setUsername(username= 'AmeBot');
+        client.user.lastMessage.member.setNickname(nickname= 'AmeBot')
   }
 }
 
