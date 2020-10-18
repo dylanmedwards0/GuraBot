@@ -10,11 +10,11 @@ module.exports = {
 
     execute(message, args){
     const client = message.client;
-    let myRole = message.guild.roles.cache.get("766156135647674389");
+    let myRole = message.guild.roles.cache.get("766156135647674389").catch(console.error);;
     if (args[0] == 'gura'){
      myRole.edit({
         color: "#B0E0E6"
-     })
+     }).catch(console.error);
      
      client.user.setAvatar(avatar=`./gura_icon.jpg`);
      message.guild.member(client.user).setNickname(username="GuraBot");
@@ -22,7 +22,7 @@ module.exports = {
    } else if (args[0] == "korone"){
     myRole.edit({
         color: "#DEB887"
-     })
+     }).catch(console.error);
      
      client.user.setAvatar(avatar= `./korone_icon.jpg`);
      message.guild.member(client.user).setNickname(username="KoroneBot");
@@ -31,8 +31,8 @@ module.exports = {
      else if (args[0] == "ame"){
         myRole.edit({
             color: "#FFE4B5"
-         })
-         
+         }).catch(console.error);
+
        client.user.setAvatar(avatar=`./ame_icon.jpg`);
        message.guild.member(client.user).setNickname(nickname= 'AmeBot');
  }
