@@ -28,7 +28,7 @@ client.on("message", (message) => {
   if(commandName ===`change`){
      if (args[0] == 'gura'){
       client.user.setAvatar(avatar=`./gura_icon.jpg`);
-      client.user.setUsername(username="GuraBot");
+      message.guild.member(client.user).setNickname(username="GuraBot");
     } else if (args[0] == "korone"){
       client.user.setAvatar(avatar= `./korone_icon.jpg`);
       message.guild.member(client.user).setNickname(username="KoroneBot");
