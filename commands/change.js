@@ -1,4 +1,10 @@
 module.exports = {
+        name: "change",
+        args: true,
+        usage: "<gura, ame, or korone>",
+        description: "Changes icon and nickname of bot.",
+
+
 
 
     execute(message, args){
