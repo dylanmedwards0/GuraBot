@@ -13,7 +13,8 @@ module.exports = {
     let myRole = message.guild.roles.cache.get("766156135647674389");
     if (args[0] == 'gura'){
      myRole.edit({
-        color: "#B0E0E6"
+        color: "#B0E0E6",
+        name: "Bot"
      }).catch(console.error);
      
      client.user.setAvatar(avatar=`./gura_icon.jpg`);
