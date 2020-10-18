@@ -9,7 +9,7 @@ module.exports = {
 
 
     execute(message, args){
-    const client = message.client
+    const client = message.client;
     if (args[0] == 'gura'){
      client.user.setAvatar(avatar=`./gura_icon.jpg`);
      message.guild.member(client.user).setNickname(username="GuraBot");
