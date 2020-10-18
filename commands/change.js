@@ -10,7 +10,7 @@ module.exports = {
 
     execute(message, args){
     const client = message.client;
-    let role = message.guild.member(client.user).roles.cache.find(role => role.name === "bot");
+    const role = message.guild.roles.cache.find(role => role.name === "bot");
     if (args[0] == 'gura'){
      role.edit({
          color: "#B0E0E6"
