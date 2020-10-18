@@ -1,5 +1,3 @@
-const Discord = require("discord.js");
-const client = new Discord.Client();
 module.exports = {
         name: "change",
         args: true,
@@ -20,7 +18,6 @@ module.exports = {
    }
      else if (args[0] == "ame"){
        client.user.setAvatar(avatar=`./ame_icon.jpg`);
-       //client.user.setUsername(username= 'AmeBot');
        message.guild.member(client.user).setNickname(nickname= 'AmeBot');
  }
 }
