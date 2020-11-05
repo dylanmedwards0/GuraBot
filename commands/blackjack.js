@@ -1,4 +1,5 @@
 const Discord = require("discord.js");
+const fs = require("fs");
 let lobbyUp = false;
 let userData = JSON.parse(fs.readFileSync("./userData.json", "utf8"));
 module.exports = {
