@@ -11,7 +11,7 @@ var blackjackSession = new Array();
 
 
 //creating a game
-if(blackjackSession[0].includes(undefined) && args[0] === "start"){
+if(blackjackSession[0] == undefined && args[0] === "start"){
     blackjackSession[0] = message.author;
     message.reply("you've made a blackjack lobby!")
 } else {  
@@ -19,7 +19,7 @@ if(blackjackSession[0].includes(undefined) && args[0] === "start"){
 }
 
 //joining a game
-if(args[0] === "join" && !blackjackSession[0].includes(undefined)){
+if(args[0] === "join" && !blackjackSession[0] == undefined){
     blackjackSession.push(message.author);
     message.reply("you've joined " + blackjackSession[0] + "'s blackjack lobby!");
 }
