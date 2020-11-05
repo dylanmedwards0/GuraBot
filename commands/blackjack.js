@@ -13,6 +13,9 @@ var blackjackSession = new Array();
 
     //creating and joining a game
     if(blackjackSession[0] == undefined && args[0] === "start" && lobbyUp == false){
+        if(userData[message.author.id + message.guild.id].money < 50){
+            userData[message.author.id + message.guild.id].money += 50;
+        }
         blackjackSession[0] = message.author;
         lobbyUp = true;
         message.reply("you've made a blackjack lobby!")
