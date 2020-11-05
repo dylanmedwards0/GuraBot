@@ -1,9 +1,10 @@
 const Discord = require("discord.js");
 module.exports = {
 args: true,
-usage: "<start>, <join>",
+usage: "<start, join>",
 description: "Start or join a blackjack session",
-
+name: "blackjack",
+cooldown: 0,
 execute(message, args){
 //the lobby
 var blackjackSession = new Array();
