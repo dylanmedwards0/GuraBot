@@ -16,7 +16,7 @@ var blackjackSession = new Array();
         blackjackSession[0] = message.author;
         lobbyUp = true;
         message.reply("you've made a blackjack lobby!")
-    } else if(args[0] === "join" && !blackjackSession[0] == undefined && lobbyUp == true){
+    } else if(args[0] === "join" && blackjackSession[0] != undefined && lobbyUp == true && blackjackSession[0] != message.author){
         blackjackSession.push(message.author);
         message.reply("you've joined " + blackjackSession[0] + "'s blackjack lobby!");
     } else{  
