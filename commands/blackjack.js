@@ -1,4 +1,5 @@
 const Discord = require("discord.js");
+const lobbyUp = false;
 module.exports = {
 args: true,
 usage: "<start, join>",
@@ -8,7 +9,7 @@ cooldown: 0,
 execute(message, args){
 //the lobby
 var blackjackSession = new Array();
-var lobbyUp = false;
+
 
     //creating and joining a game
     if(blackjackSession[0] == undefined && args[0] === "start" && lobbyUp == false){
