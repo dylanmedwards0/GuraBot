@@ -1,6 +1,7 @@
 const fs = require("fs");
 const Discord = require("discord.js");
 const { prefix } = require("./config.json");
+let userData = JSON.parse(fs.readFileSync("./userData.json", "utf8"));
 
 
 var client = new Discord.Client();
@@ -19,6 +20,11 @@ client.once("ready", () => {
 });
 
 client.on("message", (message) => {
+  if(!userData[message.author.id + message.guild.id]) userData[message.author.id + message.guild.id] = {} //adds user to json if they aren't there
+  if (!userData[message.author.id + message.guild.id].money) userData[message.author.id + message.guild.id].money = 1000; //creates a money obj
+  fs.writeFile("./userData.json", JSON.stringify(userData), (err) => {
+    if (err) console.error(err);
+  })
   if (!message.content.startsWith(prefix) || message.author.bot) return;
 
   const args = message.content.slice(prefix.length).trim().split(/ +/);
