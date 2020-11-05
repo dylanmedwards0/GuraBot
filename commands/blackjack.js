@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-const lobbyUp = false;
+let lobbyUp = false;
 module.exports = {
 args: true,
 usage: "<start, join>",
