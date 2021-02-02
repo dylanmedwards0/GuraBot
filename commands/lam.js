@@ -13,17 +13,17 @@ module.exports = {
         let randomNum = Math.floor(Math.random() * (max - min))  + min;
 
         if(randomNum == 1){
-        message.channel.send(`IT'S PEGGING TIME, <@${user.265585060776902656}>`, l1);
+        message.channel.send(`IT'S PEGGING TIME, <@${Blamizar}>`, l1);
         message.delete({ timeout: 1000 });
 
     } else if(randomNum == 2){
-        message.channel.send(`THAT ASS IS MINE, <@${user.265585060776902656}>`, l2);
+        message.channel.send(`THAT ASS IS MINE, <@${Blamizar}>`, l2);
         message.delete({ timeout: 1000 });
     } else if(randomNum == 3){
-            message.channel.send(`GET OVER HERE <@${user.265585060776902656}>, IT'S PEGGIN' TIME`, l3);
+            message.channel.send(`GET OVER HERE <@${Blamizar}>, IT'S PEGGIN' TIME`, l3);
             message.delete({ timeout: 1000 });
     } else if(randomNum == 4){
-        message.channel.send(`TIME FOR A PEGGING SESH, @${user.265585060776902656}>!`, l4);
+        message.channel.send(`TIME FOR A PEGGING SESH, @${Blamizar}>!`, l4);
         message.delete({ timeout: 1000 });
 }
 }
