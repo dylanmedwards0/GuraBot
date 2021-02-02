@@ -7,7 +7,7 @@ module.exports = {
 
 
     execute(message, args){
-        let args = args.charAt(0).toUpperCase() + args.splice(1).toLowerCase;
+        args = args.charAt(0).toUpperCase() + args.splice(1).toLowerCase;
         let any = ["Ancient_Guardian", "Ancient_Herald", "Bee_Queen", "Crab_King", "Iron_Hulk", "Lord_of_the_Fruit_Flies", "Malbatross", "Palm_Treeguard", "Pugalisk", "Quacken", "Queen_Womant", "Reanimated_Skeleton", "Shadow_Pieces", "Spider_Queen", "Toadstool", "Treeguard"];
         let summer = ["Antlion", "Dragonfly",];
         let autumn = ["Bearger",];
