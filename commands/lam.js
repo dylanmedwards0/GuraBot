@@ -9,7 +9,7 @@ module.exports = {
         let l3 = new MessageAttachment("https://i.imgur.com/gQxl43a.jpg");
         let l4 = new MessageAttachment("https://i.imgur.com/yXKFSfq.jpg");
         let min = 1;
-        let max = 4;
+        let max = 5;
         let randomNum = Math.floor(Math.random() * (max - min))  + min;
 
         if(randomNum == 1){
@@ -23,7 +23,7 @@ module.exports = {
             message.channel.send(`GET OVER HERE, IT'S PEGGIN' TIME`, l3);
             message.delete({ timeout: 1000 });
     } else if(randomNum == 4){
-        message.channel.send("IT'S PEGGING TIME", l4);
+        message.channel.send("TIME FOR A PEGGING SESH", l4);
         message.delete({ timeout: 1000 });
 }
 }
