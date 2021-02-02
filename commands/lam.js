@@ -9,22 +9,20 @@ module.exports = {
 
         if(randomNum == 1){
         message.channel.send("IT'S PEGGING TIME", {
-            file: "https://i.imgur.com/Qi0DKaZ.jpg"
-        });
+            file: [`https://i.imgur.com/Qi0DKaZ.jpg`]});
         message.delete({ timeout: 1000 });
 
     } else if(randomNum == 2){
         message.channel.send("IT'S PEGGING TIME", {
-            file: "https://i.imgur.com/DebhtPe.png"
-        });
+            file: [`https://i.imgur.com/DebhtPe.png`]});
         message.delete({ timeout: 1000 });
     } else if(randomNum == 3){
-            message.channel.send("IT'S PEGGING TIME", {
-            file: "https://i.imgur.com/gQxl43a.jpg"});
+            message.channel.send(`GET OVER HERE, IT'S PEGGIN' TIME`, {
+            file: [`https://i.imgur.com/gQxl43a.jpg`]});
             message.delete({ timeout: 1000 });
     } else if(randomNum == 4){
         message.channel.send("IT'S PEGGING TIME", {
-        file: "https://i.imgur.com/yXKFSfq.jpg"});
+        file: [`https://i.imgur.com/yXKFSfq.jpg`]});
         message.delete({ timeout: 1000 });
 }
 }
