@@ -18,7 +18,7 @@ module.exports = {
         if(args == "Any")
         for(i = 0; i < any.length, i++)
         {
-        let sendAny = sendAny + `\n` + `https://dontstarve.fandom.com/wiki/${any[0]}`
+        let sendAny = sendAny + `\n` + `https://dontstarve.fandom.com/wiki/${any[0]}`;
         }
 
         message.channel.send(sendAny);
