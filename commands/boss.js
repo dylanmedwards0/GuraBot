@@ -19,7 +19,7 @@ module.exports = {
         if(args == "any"){
         for(i = 0; i < any.length; i++)
         {
-        sendAny = sendAny + `\n` + `https://dontstarve.fandom.com/wiki/${any[0]}`;
+        sendAny = sendAny + `\n` + `https://dontstarve.fandom.com/wiki/${any[i]}`;
         }
 
         message.channel.send(sendAny);
