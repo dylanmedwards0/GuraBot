@@ -15,8 +15,8 @@ module.exports = {
         let spring = ["Moose/Goose", "Tiger_Shark", ];
 
 
-        if(args == "Any")
-        for(i = 0; i < any.length, i++)
+        if(args == "Any"){
+        for(i = 0; i < any.length; i++)
         {
         let sendAny = sendAny + `\n` + `https://dontstarve.fandom.com/wiki/${any[0]}`;
         }
@@ -24,4 +24,5 @@ module.exports = {
         message.channel.send(sendAny);
         
     }
+}
 }
