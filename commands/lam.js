@@ -1,5 +1,6 @@
 const { MessageAttachment } = require("discord.js");
 
+
 module.exports = {
     name: "lam",
     description: "Gura summons her pegging machine",
@@ -11,6 +12,7 @@ module.exports = {
         let min = 1;
         let max = 5;
         let randomNum = Math.floor(Math.random() * (max - min))  + min;
+        let Blamizar = message.guild.members.get("265585060776902656");
 
         if(randomNum == 1){
         message.channel.send(`IT'S PEGGING TIME, <@${Blamizar}>`, l1);
