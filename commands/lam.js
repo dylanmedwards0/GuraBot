@@ -3,7 +3,7 @@ module.exports = {
     description: "Gura summons her pegging machine",
     execute(message, args){
 
-        let min = 0;
+        let min = 1;
         let max = 4;
         let randomNum = Math.floor(Math.random() * (max - min))  + min;
 
