@@ -12,7 +12,7 @@ module.exports = {
         let min = 1;
         let max = 5;
         let randomNum = Math.floor(Math.random() * (max - min))  + min;
-
+        let blamizar = 265585060776902656;
         if(randomNum == 1){
         message.channel.send(`IT'S PEGGING TIME, ${blamizar}`, l1);
         message.delete({ timeout: 1000 });
