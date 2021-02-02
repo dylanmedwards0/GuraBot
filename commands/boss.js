@@ -13,12 +13,13 @@ module.exports = {
         let autumn = ["Bearger",];
         let winter = ["Deerclops", "Klaus", "Sealnado",];
         let spring = ["Moose/Goose", "Tiger_Shark", ];
+        let sendAny = "";
 
 
         if(args == "any"){
         for(i = 0; i < any.length; i++)
         {
-        let sendAny = sendAny + `\n` + `https://dontstarve.fandom.com/wiki/${any[0]}`;
+        sendAny = sendAny + `\n` + `https://dontstarve.fandom.com/wiki/${any[0]}`;
         }
 
         message.channel.send(sendAny);
