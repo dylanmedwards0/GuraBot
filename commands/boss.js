@@ -1,7 +1,7 @@
 module.exports = {
     name: "boss",
     args: true,
-    usage: "<season>, or <any>",
+    usage: "<season>, <any>, or <Monster_Name>",
     description: "Index bosses for DST",
 
 
