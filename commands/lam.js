@@ -12,19 +12,20 @@ module.exports = {
         let min = 1;
         let max = 5;
         let randomNum = Math.floor(Math.random() * (max - min))  + min;
-        let blamizar = 265585060776902656;
+
+
         if(randomNum == 1){
-        message.channel.send(`IT'S PEGGING TIME, ${blamizar}`, l1);
+        message.channel.send(`IT'S PEGGING TIME, LAM`, l1);
         message.delete({ timeout: 1000 });
 
     } else if(randomNum == 2){
-        message.channel.send(`THAT ASS IS MINE, ${blamizar}`, l2);
+        message.channel.send(`THAT ASS IS MINE, LAM`, l2);
         message.delete({ timeout: 1000 });
     } else if(randomNum == 3){
-            message.channel.send(`GET OVER HERE ${blamizar}, IT'S PEGGIN' TIME`, l3);
+            message.channel.send(`GET OVER HERE LAM, IT'S PEGGIN' TIME`, l3);
             message.delete({ timeout: 1000 });
     } else if(randomNum == 4){
-        message.channel.send(`TIME FOR A PEGGING SESH, ${blamizar}!`, l4);
+        message.channel.send(`TIME FOR A PEGGING SESH, LAM!`, l4);
         message.delete({ timeout: 1000 });
 }
 }
