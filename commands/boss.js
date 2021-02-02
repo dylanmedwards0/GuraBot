@@ -1,13 +1,14 @@
 module.exports = {
     name: "boss",
     args: true,
-    usage: "<season>, <any>, or <Deerclops>",
+    usage: "<season>, or <any>",
     description: "Index bosses for DST",
 
 
 
     execute(message, args){
         
+        args = args.shift().toLowerCase();
         let any = ["Ancient_Guardian", "Ancient_Herald", "Bee_Queen", "Crab_King", "Iron_Hulk", "Lord_of_the_Fruit_Flies", "Malbatross", "Palm_Treeguard", "Pugalisk", "Quacken", "Queen_Womant", "Reanimated_Skeleton", "Shadow_Pieces", "Spider_Queen", "Toadstool", "Treeguard"];
         let summer = ["Antlion", "Dragonfly"];
         let autumn = ["Bearger",];
@@ -41,6 +42,8 @@ module.exports = {
         {
         sendAny = sendAny + `\n` + `https://dontstarve.fandom.com/wiki/${spring[i]}`;
         }
+    } else { 
+        sendAny = `https://dontstarve.fandom.com/wiki/${args}`;
     }
     message.channel.send(sendAny);
     message.delete({ timeout: 1000 });
