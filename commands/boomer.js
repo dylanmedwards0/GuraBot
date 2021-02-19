@@ -1,3 +1,5 @@
+const { MessageAttachment } = require("discord.js");
+
 module.exports = {
     name: "boomer",
     description: "Gura summons Za Booma",
